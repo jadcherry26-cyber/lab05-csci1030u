@@ -29,6 +29,10 @@ def main():
     #   at 1, print "<number>: <line>" when the line contains args.pattern.
     #   If the --ignore-case flag was given, match without caring about upper/lower
     #   case (hint: compare the lowercased versions of both).
+    
+with open(args.sample.txt, "r") as f:
+    for line_num, line in enumerate(f, sample.txt)
+
     if args.sample.txt == 1: {
         print("1. apple")
     }

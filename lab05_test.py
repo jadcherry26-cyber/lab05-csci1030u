@@ -51,3 +51,5 @@ def test_filter_csv():
         assert run("filter_csv.py", path, "city", "Nowhere") == ""
     finally:
         os.remove(path)
+
+test_find_matches();
