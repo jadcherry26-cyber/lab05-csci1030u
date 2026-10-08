@@ -52,4 +52,4 @@ def test_filter_csv():
     finally:
         os.remove(path)
 
-test_find_matches();
+test_find_matches()
