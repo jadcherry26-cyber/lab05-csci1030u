@@ -18,7 +18,13 @@ def main():
     
 
     args = parser.parse_args()
+    with open(args.filename) as f:
+        for line_num, line in enumerate(f, start=1):
+            if args.pattern in line:
+                print(line_num, ": ", line.rstrip("\n"), sep="")
+                # print(line_num, ": ", line.rstrip("\n"), sep="")
 
+        
 
 
     # TODO: open args.filename and read its lines. For each line, numbered starting
