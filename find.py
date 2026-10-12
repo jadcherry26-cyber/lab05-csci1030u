@@ -20,9 +20,11 @@ def main():
     args = parser.parse_args()
     with open(args.filename) as f:
         for line_num, line in enumerate(f, start=1):
-            if args.pattern in line:
+            if args.ignore_case:
+                if args.pattern.lower() in line.lower():
+                    print(line_num, ": ", line.rstrip("\n"), sep="")
+            elif args.pattern in line:
                 print(line_num, ": ", line.rstrip("\n"), sep="")
-                # print(line_num, ": ", line.rstrip("\n"), sep="")
 
         
 
