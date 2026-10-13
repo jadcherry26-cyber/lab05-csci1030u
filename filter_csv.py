@@ -25,7 +25,10 @@ def main():
         for row in rows[1:]:
             if row[1] == args.value:
                 print(",".join(row))
-                #print(row)
+            elif row[2] == args.value:
+                print(",".join(row))
+            elif row[0] == args.value:
+                print(",".join(row))
 
 
 
