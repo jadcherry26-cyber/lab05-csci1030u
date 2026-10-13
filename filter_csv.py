@@ -23,11 +23,7 @@ def main():
         header = rows[0]
         position = header.index(args.column)
         for row in rows[1:]:
-            if row[1] == args.value:
-                print(",".join(row))
-            elif row[2] == args.value:
-                print(",".join(row))
-            elif row[0] == args.value:
+            if row[position] == args.value:
                 print(",".join(row))
 
 
