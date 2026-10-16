@@ -10,8 +10,7 @@ import csv
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Print the rows of a CSV where a column has a given value.")
+    parser = argparse.ArgumentParser(description="Print the rows of a CSV where a column has a given value.")
     parser.add_argument("filename", help="the CSV file to read")
     parser.add_argument("column", help="the name of the column to match on")
     parser.add_argument("value", help="the value to match")
